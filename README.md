@@ -1,23 +1,29 @@
 # Module_3-Challenge
 
-REMIX DEFAULT WORKSPACE
+## Description of the project
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+This project involves writing a smart contract to create an ERC20 token named BlackRock (symbol: BLRK). The contract allows the owner to mint new tokens to specified addresses, while any user can burn their tokens and transfer them to other addresses. The contract is written in Solidity and can be deployed using HardHat or Remix.
 
-This workspace contains 3 directories:
+## Getting Started
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+### Installing
 
-SCRIPTS
+* Clone the repository to your local machine.
+* Ensure you have Solidity installed or access to an online compiler like Remix.
+* If using HardHat install the necessary dependencies by running:
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+### Executing program
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+To deploy and interact with the contract:
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+* Open Remix at [remix.ethereum.org](https://remix.ethereum.org/).
+* Create a new file and paste the contract code.
+* Compile the contract.
+* Deploy the contract using the Remix interface.
+
+### For common issues:
+* Ensure your Solidity version matches the pragma statement in the contract (`^0.8.18`).
+* Verify that your wallet address is properly configured when deploying or interacting with the contract.
+
+
+### Author : Venkateswarlu
